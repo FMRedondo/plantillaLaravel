@@ -1226,14 +1226,14 @@ select {
 .mb-4 {
 	margin-bottom: 1rem;
 }
-.-mt-px {
-	margin-top: -1px;
-}
 .ml-auto {
 	margin-left: auto;
 }
 .mt-0 {
 	margin-top: 0px;
+}
+.-mt-px {
+	margin-top: -1px;
 }
 .block {
 	display: block;

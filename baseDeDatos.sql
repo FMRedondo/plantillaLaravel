@@ -3,15 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
-<<<<<<< HEAD
--- Tiempo de generación: 20-10-2021 a las 18:09:04
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 7.4.20
-=======
 -- Tiempo de generación: 20-10-2021 a las 19:54:07
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.4.24
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -65,9 +59,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2014_10_12_200000_add_two_factor_columns_to_users_table', 1),
 (4, '2019_08_19_000000_create_failed_jobs_table', 1),
 (5, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-<<<<<<< HEAD
-(6, '2021_10_20_083957_create_sessions_table', 1);
-=======
 (6, '2021_10_20_083957_create_sessions_table', 1),
 (7, '2021_10_20_171358_create_permission_tables', 1);
 
@@ -94,7 +85,6 @@ CREATE TABLE `model_has_roles` (
   `model_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `model_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 
 -- --------------------------------------------------------
 
@@ -111,8 +101,6 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
-=======
 -- Estructura de tabla para la tabla `permissions`
 --
 
@@ -127,7 +115,6 @@ CREATE TABLE `permissions` (
 -- --------------------------------------------------------
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- Estructura de tabla para la tabla `personal_access_tokens`
 --
 
@@ -146,8 +133,6 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
-=======
 -- Estructura de tabla para la tabla `roles`
 --
 
@@ -173,7 +158,6 @@ CREATE TABLE `role_has_permissions` (
 -- --------------------------------------------------------
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- Estructura de tabla para la tabla `sessions`
 --
 
@@ -191,11 +175,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-<<<<<<< HEAD
-('jEgleo8Bjy8FW6Lnr5FdNE0c7gqjpTBqigCT5cSW', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiTWdsdHhqTFJoVUFnbHNBMFhzN1NuM1Rackc1eGpheFJFb0FtejhlUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRqMnBoQnZ0V2JESU4zYUVnay5TQWIubTFySklqLzBnVTVVQzNDOGNhY2ZleHBhMTVrek9RQyI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkajJwaEJ2dFdiRElOM2FFZ2suU0FiLm0xckpJai8wZ1U1VUMzQzhjYWNmZXhwYTE1a3pPUUMiO30=', 1634719967);
-=======
 ('RO1aMMQXXPTqKYHZKfDohN29mnyxB2hCZK4UbvXj', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY0Z2eXFFMzVRYzBDMHVvM09xOGNtcEluNVdnRnFlWmlwYjc1Q3ZudiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fX0=', 1634752219);
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 
 -- --------------------------------------------------------
 
@@ -223,11 +203,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-<<<<<<< HEAD
-(1, 'admin', 'admin@admin.com', NULL, '$2y$10$j2phBvtWbDIN3aEgk.SAb.m1rJIj/0gU5UC3C8cacfexpa15kzOQC', NULL, NULL, NULL, NULL, NULL, '2021-10-20 06:46:52', '2021-10-20 06:46:52');
-=======
 (1, 'admin', 'admin@admin.com', NULL, '$2y$10$pn2T3dU.V0961x.KNwfGz.sMAYmvGvf66RxaSYhjBq4tofDHrBCDW', NULL, NULL, NULL, NULL, NULL, '2021-10-20 15:50:00', '2021-10-20 15:50:00');
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 
 --
 -- Índices para tablas volcadas
@@ -247,8 +223,6 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
-<<<<<<< HEAD
-=======
 -- Indices de la tabla `model_has_permissions`
 --
 ALTER TABLE `model_has_permissions`
@@ -263,15 +237,12 @@ ALTER TABLE `model_has_roles`
   ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- Indices de la tabla `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
-<<<<<<< HEAD
-=======
 -- Indices de la tabla `permissions`
 --
 ALTER TABLE `permissions`
@@ -279,7 +250,6 @@ ALTER TABLE `permissions`
   ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- Indices de la tabla `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
@@ -288,8 +258,6 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
-<<<<<<< HEAD
-=======
 -- Indices de la tabla `roles`
 --
 ALTER TABLE `roles`
@@ -304,7 +272,6 @@ ALTER TABLE `role_has_permissions`
   ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- Indices de la tabla `sessions`
 --
 ALTER TABLE `sessions`
@@ -333,9 +300,6 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT de la tabla `migrations`
 --
 ALTER TABLE `migrations`
-<<<<<<< HEAD
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-=======
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
@@ -343,7 +307,6 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `permissions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 
 --
 -- AUTO_INCREMENT de la tabla `personal_access_tokens`
@@ -352,21 +315,16 @@ ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
-<<<<<<< HEAD
-=======
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-<<<<<<< HEAD
-=======
 
 --
 -- Restricciones para tablas volcadas
@@ -390,7 +348,6 @@ ALTER TABLE `model_has_roles`
 ALTER TABLE `role_has_permissions`
   ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
->>>>>>> 819c65055898cd40efe85c77b00ee14d29759496
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
